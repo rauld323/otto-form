@@ -6,34 +6,70 @@
 	<title>Appointment SetUp</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+	 crossorigin="anonymous" />
 </head>
 <body>
 
-	<form action="succes.html">
-		<input type="text" placeholder="Name"><br>
-		<input type="email" placeholder="Email"><br>
+		<div class="container">
 
-		<div class="genderOption">
-			<input type="radio" name="male" value="radio">
-			<label for="male">Male</label>
-			<input type="radio"  name="female" value="radio">
-			<label for="female">Female</label>
-			<input type="radio" name="other" value="radio">
-			<label for="other">Other</label><br>
+			<section id="options">
+				<a href="#"><i class="fas fa-sign-in-alt">Anmelden</i></a>
+				<a href="#"><i class="fas fa-globe">English</i></a>
+				<a href="#"><i class="far fa-credit-card">Payback</i></a>
+			</section>
+
+			<nav>
+				<a href="#"><img src="" alt=""></a>
+				<a href="#">Links</a>
+				<a href="#">Services</a>
+				<a href="#">Company</a>
+				<a href="#">Magazin (DE)</a>
+				<a href="#">Wissen (DE)</a>
+				<a href="tel:01234567890"><i class="fas fa-phone-alt">+49 89 121 896 09</i></a>
+				<button><i class="fas fa-user-alt">Get a consulation</i></button>
+			</nav>
+
+			<section id="content1">
+				<h2>Lets stay in contact</h2>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus culpa ipsa minus, numquam assumenda, optio totam dolores non soluta accusamus quia odit perspiciatis, aspernatur reiciendis commodi laudantium officiis eum. Culpa.</p>
+			</section>
+
+			<section id="content2">
+				<form action="succes.html" class="formSection">
+					<img src="#" alt="ottoLogo"><br>
+
+					<input type="text" placeholder="Name" required><br>
+					<input type="email" placeholder="Email" required><br>
+
+					<div class="genderOption">
+						<input type="radio" name="gender" value="radio" checked required>
+						<label for="male">Male</label>
+						<input type="radio" name="gender" value="radio">
+						<label for="female">Female</label>
+						<input type="radio" name="gender" value="radio">
+						<label for="other">Other</label><br>
+					</div>
+
+					<select name="timeSlots" form="timeform">
+						<option>3:50</option>
+						<option>4:50</option>
+						<option>5:50</option>
+					</select><br>
+
+					<button type="submit">Sign Up</button><br>
+
+					<input type="checkbox" name="contactMe" value="checkbox" checked>
+					<label for="contactMe">
+						<small>Want to know our latest deals?</small></p>
+					</label><br>
+				</form>
+			</section>
+			<footer>Footer</footer>
 		</div>
 
-		<select name="timeSlots" form="timeform">
-			<option>3:50</option>
-			<option>4:50</option>
-			<option>5:50</option>
-		</select><br>
 
-		<input type="checkbox" name="contactMe" value="checkbox">
-		<label for="contactMe"> Contact Me!</label><br>
 
-		<button type="submit">Sign Up</button>
-	</form>
 
 </body>
 </html>
