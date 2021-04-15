@@ -13,30 +13,44 @@
 
 		<div class="container">
 
-			<section id="options">
-				<a href="#"><i class="fas fa-sign-in-alt">Anmelden</i></a>
-				<a href="#"><i class="fas fa-globe">English</i></a>
-				<a href="#"><i class="far fa-credit-card">Payback</i></a>
+			<section id="tools">
+				<header>
+					<ul>
+						<li><a href="#"><i class="fas fa-sign-in-alt">Anmelden</i></a></li>
+						<li><a href="#"><i class="fas fa-globe">English</i></a></li>
+						<li><a href="#"><i class="far fa-credit-card">Payback</i></a></li>
+					</ul>
+				</header>
 			</section>
 
+
 			<nav>
-				<a href="#"><img src="" alt=""></a>
-				<a href="#">Links</a>
-				<a href="#">Services</a>
-				<a href="#">Company</a>
-				<a href="#">Magazin (DE)</a>
-				<a href="#">Wissen (DE)</a>
+				<a href="#"><img src="" alt="logo"></a>
+				<ul>
+					<li><a href="#">Links</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Company</a></li>
+					<li><a href="#">Magazin (DE)</a></li>
+					<li><a href="#">Wissen (DE)</a></li>
+				</ul>
 				<a href="tel:01234567890"><i class="fas fa-phone-alt">+49 89 121 896 09</i></a>
 				<button><i class="fas fa-user-alt">Get a consulation</i></button>
 			</nav>
 
+
+
 			<section id="content1">
-				<h2>Lets stay in contact</h2>
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus culpa ipsa minus, numquam assumenda, optio totam dolores non soluta accusamus quia odit perspiciatis, aspernatur reiciendis commodi laudantium officiis eum. Culpa.</p>
+				<div class="infoSection">
+					<h2>Lets stay in contact</h2>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus culpa ipsa minus, numquam assumenda, optio
+						totam dolores non soluta accusamus quia odit perspiciatis, aspernatur reiciendis commodi laudantium officiis eum.
+						Culpa.</p>
+				</div>
 			</section>
 
 			<section id="content2">
 				<form action="succes.html" class="formSection">
+
 					<img src="#" alt="ottoLogo"><br>
 
 					<input type="text" placeholder="Name" required><br>
@@ -51,11 +65,7 @@
 						<label for="other">Other</label><br>
 					</div>
 
-					<select name="timeSlots" form="timeform">
-						<option>3:50</option>
-						<option>4:50</option>
-						<option>5:50</option>
-					</select><br>
+					<select name="apptDates" id="timeslots" required></select><br>
 
 					<button type="submit">Sign Up</button><br>
 
@@ -63,13 +73,20 @@
 					<label for="contactMe">
 						<small>Want to know our latest deals?</small></p>
 					</label><br>
+
 				</form>
 			</section>
-			<footer>Footer</footer>
+
+			<footer>
+				<i class="fab fa-twitter"></i>
+				<i class="fab fa-facebook"></i>
+				<i class="fab fa-youtube"></i>
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-linkedin"></i>
+			</footer>
 		</div>
 
-
-
-
+		<script type="text/javascript" src="dates.json"></script>
+		<script src="js/app.js"></script>
 </body>
 </html>
