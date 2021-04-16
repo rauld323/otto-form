@@ -5,7 +5,7 @@
 .container{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: .8fr 1.5fr 4fr 0.4fr;
+	grid-template-rows: .8fr 1.5fr 10fr 0.4fr;
 	grid-template-areas:
 	"tools tools"
 	"nav nav"
@@ -124,26 +124,58 @@ footer{
 
 /* Content1 Section Start */
 .infoSection{
-	width: 60%;
-	height: 75%;
-	background-color: aqua;
+	display: grid;
+	width: 65%;
+	height: 70%;
 	margin-left: 20%;
-	margin-top: 7%;
 	text-align: center;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.infoSection h2{
+	grid-area: 2/2/2/2;
+}
+.infoSection p{
+	grid-area: 3/2/3/2;
 }
 /* Content1 Section End */
 
 
 /* Form Styling Start */
 .formSection{
-	width: 70%;
+	display: grid;
+	width: 65%;
 	height: 70%;
 	background-color: green;
 	border: solid .1rem #AEB2BF;
 	margin-left: 15%;
-	margin-top: 10%;
 	border-radius: 5px;
 	text-align: center;
+	grid-template-columns: 1fr 4fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-row-gap: 10px;
+
+}
+.formSection img{
+	grid-area: 2/2/3/2;
+}
+.name{
+	grid-area: 3/2/4/2;
+}
+.email{
+	grid-area: 4/2/5/2;
+}
+.genderOption{
+	grid-area: 5/2/6/2;
+}
+.formSection select{
+	grid-area: 6/2/7/2;
+}
+.formSection button{
+	grid-area: 8/2/9/2;
+}
+.boxOption{
+	grid-area: 9/2/10/2;
 }
 /* Form Styling End */
 

@@ -26,7 +26,7 @@
 
 			<nav id="navbar">
 				<div class="nav-container">
-					<a href="#"><img src="" alt="logo"></a>
+					<a href="#"><img src="#" alt="logo" style="background:green;"></a>
 					<ul>
 						<li><a href="#">Links</a></li>
 						<li><a href="#">Services</a></li>
@@ -58,8 +58,8 @@
 
 					<img src="#" alt="ottoLogo"><br>
 
-					<input type="text" placeholder="Name" required><br>
-					<input type="email" placeholder="Email" required><br>
+					<input class="name" type="text" placeholder="Name" required><br>
+					<input class="email" type="email" placeholder="Email" required><br>
 
 					<div class="genderOption">
 						<input type="radio" name="gender" value="radio" checked required>
@@ -74,10 +74,12 @@
 
 					<button type="submit">Sign Up</button><br>
 
-					<input type="checkbox" name="contactMe" value="checkbox" checked>
-					<label for="contactMe">
-						<small>Want to know our latest deals?</small></p>
-					</label><br>
+					<div class="boxOption">
+						<input type="checkbox" name="contactMe" value="checkbox" checked>
+						<label for="contactMe">
+							<small>Want to know our latest deals?</small></p>
+						</label>
+					</div><br>
 
 				</form>
 			</section>
