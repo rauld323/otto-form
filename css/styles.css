@@ -1,11 +1,12 @@
 *{
 	padding: 0;
 	margin: 0;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 .container{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: .8fr 1.5fr 10fr 0.4fr;
+	grid-template-rows: .5fr 1fr 5fr 0.4fr;
 	grid-template-areas:
 	"tools tools"
 	"nav nav"
@@ -33,6 +34,7 @@ nav{
 footer{
 	background-color: white;
 	grid-area: footer;
+	height: 20%;
 }
 
 
@@ -55,6 +57,7 @@ footer{
 	padding: 0;
 	margin-top:12px;
 	justify-items: center;
+	align-items: center;
 }
 
 #tools li{
@@ -77,6 +80,7 @@ footer{
   grid-template-rows: 1fr 0fr 0fr ;
 	gap: 0% 0px;
 	margin: 30px 60px;
+	align-items: center;
 }
 /* Menu Items */
 .nav-container ul{
@@ -98,7 +102,7 @@ footer{
 	justify-items: end;
 	grid-template-columns: 1fr;
 	text-decoration: none;
-	color: #04BF9D;
+	color: #0583F2;
 	transition: all .4s ease-in-out;
 }
 .phone:hover{
@@ -109,7 +113,12 @@ footer{
 	width: 78%;
 	margin-left: 22%;
 	background-color: white;
-	color: #04BF9D;
+	color: #0583F2;
+	border: none;
+	font-size: 1rem;
+	padding: 10px;
+	border-radius: 4px;
+	box-shadow: 0px 10px 16px -2px rgba(0,0,0,0.69);
 }
 .nav-container .icon {
   display: none;
@@ -120,20 +129,23 @@ footer{
 
 
 
-
-
 /* Content1 Section Start */
 .infoSection{
 	display: grid;
 	width: 65%;
-	height: 70%;
 	margin-left: 20%;
+	background-color: #0583F2;
+	border-radius: 4px;
+	color: white;
 	text-align: center;
+	align-items: end;
 	grid-template-columns: 1fr 2fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-rows: .1fr .1fr .1fr .1fr;
 }
 .infoSection h2{
+	font-size: 3rem;
 	grid-area: 2/2/2/2;
+	margin-bottom: 20px
 }
 .infoSection p{
 	grid-area: 3/2/3/2;
@@ -145,14 +157,12 @@ footer{
 .formSection{
 	display: grid;
 	width: 65%;
-	height: 70%;
-	background-color: green;
 	border: solid .1rem #AEB2BF;
 	margin-left: 15%;
 	border-radius: 5px;
 	text-align: center;
 	grid-template-columns: 1fr 4fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 2.3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
 	grid-row-gap: 10px;
 
 }
@@ -161,18 +171,37 @@ footer{
 }
 .name{
 	grid-area: 3/2/4/2;
+	border-radius: 4px;
+	border: solid .5px #AEB2BF;
+	color: #011140;
 }
 .email{
 	grid-area: 4/2/5/2;
+	border-radius: 4px;
+	border: solid .5px #AEB2BF;
+	color: #011140;
 }
 .genderOption{
 	grid-area: 5/2/6/2;
+	border-radius: 4px;
+	border: solid .5px #AEB2BF;
+	padding-top: 10px;
+
 }
 .formSection select{
 	grid-area: 6/2/7/2;
+	border-radius: 4px;
+	border: solid .5px #AEB2BF;
 }
 .formSection button{
+	background-color: #0583F2;
 	grid-area: 8/2/9/2;
+	border-radius: 4px;
+	border: solid .5px #AEB2BF;
+	color: white;
+}
+.formSection button:active{
+	transform: translateY(4px);
 }
 .boxOption{
 	grid-area: 9/2/10/2;
@@ -196,10 +225,12 @@ footer .fab{
 
 
 
-@media (min-width: 551px) and (max-width: 1199px){
+
+
+@media (min-width: 1025px) and (max-width: 1199px){
 	.nav-container{
   display: grid;
-  grid-template-columns: 10% 9fr 3fr 1fr;
+  grid-template-columns: 10% 9fr 5fr 1fr;
 }
 	/* Hamburger  */
 	.nav-container ul{
@@ -209,26 +240,15 @@ footer .fab{
     display: block;
 		text-align: right;
 		font-size: 23px;
+		color: #011140;
 	}
 }
-
-/* Mobile */
-@media only screen and (max-width: 550px){
-	.container{
-		grid-template-columns: 1fr;
-		grid-template-rows: 0fr 1fr 2.4fr 2.4fr 0.7fr;
-		grid-template-areas:
-		"options"
-		"nav"
-		"content1"
-		"content2"
-		"footer";
-	grid-gap: 0.2rem;
-	}
-
-	#tools{
-		display: none;
-	}
+/* Small screens, laptops  */
+@media(min-width: 769px) and (max-width: 1024px){
+	.nav-container{
+  display: grid;
+  grid-template-columns: 10% 8fr 5fr 1fr;
+}
 	.nav-container ul{
 		display: none;
 	}
@@ -236,5 +256,49 @@ footer .fab{
     display: block;
 		text-align: right;
 		font-size: 23px;
+		color: #011140;
 	}
 }
+
+@media(min-width: 550px) and (max-width: 768px){
+	.nav-container{
+  display: grid;
+  grid-template-columns: 45% 11fr 2fr 0fr;
+}
+	.nav-container ul{
+		display: none;
+	}
+	.nav-container a.icon {
+    display: block;
+		text-align: right;
+		font-size: 23px;
+		color: #011140;
+	}
+	.phone{
+		display: none;
+	}
+	.container{
+	grid-template-columns: 1fr;
+	grid-template-rows: .1fr .2fr 1fr 0.4fr;
+	grid-template-areas:
+	"tools"
+	"nav"
+	"content1"
+	"content2"
+	"footer";
+	}
+	.infoSection{
+		width: 70%;
+		margin-top: 70px;
+		margin-left:15%;
+		grid-template-columns: 1fr 2fr 1fr;
+		grid-template-rows: .1fr .1fr .1fr .1fr;
+	}
+	#content2{
+		width: 105%;
+    margin-left: 0%;
+		grid-template-columns: 1fr 4fr 1fr;
+		grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+	}
+}
+
