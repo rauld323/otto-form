@@ -18,9 +18,9 @@
 			<section id="tools">
 				<header>
 					<ul>
-						<li><a href="#"><i class="fas fa-sign-in-alt"> Anmelden</i></a></li>
-						<li><a href="#"><i class="fas fa-globe"> English</i></a></li>
-						<li><a href="#"><i class="fas fa-credit-card"> Payback</i></a></li>
+						<li><a href="#"><i class="fas fa-sign-in-alt"></i> Anmelden</a></li>
+						<li><a href="#"><i class="fas fa-globe"></i> English</a></li>
+						<li><a href="#"><i class="fas fa-credit-card"></i> Payback</a></li>
 					</ul>
 				</header>
 			</section>
@@ -39,15 +39,34 @@
 						<li><a href="#">Magazin(DE)</a></li>
 						<li><a href="#">Wissen (DE)</a></li>
 					</ul>
-					<a class="phone" href="tel:01234567890"><i class="fas fa-phone-alt">+49 89 121 896 09</i></a>
+
+					<a class="phone" href="tel:01234567890">
+						<i class="fas fa-phone-alt"> +49 89 121 896 09</i>
+					</a>
 
 					<button>
-						<i class="fas fa-user-alt">Get a consulation</i>
+						<i class="fas fa-user-alt"></i> Get a consulation
 					</button>
 
-					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<!-- Hamburger Menu -->
+					<a href="javascript:void(0);" class="icon" id="openbtn" onclick="openNav()">
 						<i class="fa fa-bars"></i>
 					</a>
+
+					<div id="mySidepanel" class="sidepanel">
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+							<div class="sideMenu">
+								<a href="#">
+									<img style="height:140px; width:400px;" src="img/logo_ottonova.png" alt="logo">
+								</a>
+								<a href="#">Links</a>
+								<a href="#">Services</a>
+								<a href="#">Company</a>
+								<a href="#">Magazin (DE)</a>
+								<a href="#">Wissen (DE)</a>
+						</div>
+					</div>
+
 				</div>
 			</nav>
 
