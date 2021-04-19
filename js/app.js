@@ -1,4 +1,4 @@
-//format can be changed depeding on country standard
+//Format can be changed depeding on country standard de-DE
 const localFormat = 'en-EN';
 const selectElement = document.getElementById('timeslots');
 
@@ -53,6 +53,50 @@ function closeNav() {
 
 
 
+// Ran out of time, but the code in the bottom was suppose to create 3 selectors
+// that were populate dynamically depending on the date that user chose.
 
 
+
+// const localFormat = 'en-EN';
+// let appMonth = document.getElementById('month');
+// let startTime = document.getElementById('start');
+
+
+// appMonth.addEventListener('change', function () {
+
+
+// 	while (startTime.options.length > 0) {
+// 		startTime.options.remove(0);
+// 	}
+
+
+// 	fetch("dates.json")
+// 		.then(response => response.json())
+// 		.then(data => {
+
+
+// 			for (let i = 0; i < data.result.length; i++) {
+
+
+// 				const startDate = new Date(data.result[i].start);
+
+// 				const start = new Intl.DateTimeFormat(localFormat, {
+// 					timeStyle: 'short'
+// 				}).format(startDate);
+
+// 				// selectElementy.appendChild(start);
+// 				// startTime.appendChild(option)
+
+
+// 				const formatTime = `${start}`;
+
+// 				const opta = document.createElement('option');
+// 				opta.innerHTML = formatTime;
+
+// 				startTime.appendChild(opta);
+
+// 			}
+// 		})
+// })
 
